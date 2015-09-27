@@ -1,0 +1,9 @@
+body {
+  background: pink;
+}
+
+.name-lockup {
+  background: red;
+  width: 100px;
+  height: 100px;
+}
