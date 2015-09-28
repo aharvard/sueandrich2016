@@ -1,3 +1,7 @@
+* {
+  transition: all .5s ease;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -19,5 +23,31 @@ body {
   background: url(../img/name-lockup.svg) center 40%;
   width: 320px;
   height: 100px;
-  margin-right: 10%;
+  margin-right: 15%;
+}
+
+@media screen and (max-width: 1100px) {
+  .name-lockup { margin-right: 10%; }
+}
+
+
+@media screen and (max-width: 950px) {
+  .hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+              url(../img/hero.jpg) 70% 40%;
+    background-size: cover;
+  }
+
+  .name-lockup { margin-right: 10%; }
+}
+
+@media screen and (max-width: 400px) {
+  .hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+              url(../img/hero.jpg) center 40%;
+    background-size: cover;
+    align-content: center;
+  }
+
+  .name-lockup { margin-right: 0; }
 }
