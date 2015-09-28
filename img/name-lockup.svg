@@ -3,8 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 620 190" enable-background="new 0 0 620 190" xml:space="preserve">
 <g>
-	<text transform="matrix(1 0 0 1 149.5605 182.8676)"><tspan x="0" y="0" font-family="'GentiumBookBasic-Italic'" font-size="95.5468px">and </tspan><tspan x="158.6" y="0" font-family="'OpenSans-Extrabold'" font-size="137.5468px" letter-spacing="-5">RICH</tspan></text>
+	<text transform="matrix(1 0 0 1 149.5605 182.8676)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'GentiumBookBasic-Italic'" font-size="95.5468px">and </tspan><tspan x="158.6" y="0" fill="#FFFFFF" font-family="'OpenSans-Extrabold'" font-size="137.5468px" letter-spacing="-5">RICH</tspan></text>
 	
-		<text transform="matrix(1 0 0 1 -1.831055e-04 105.8686)" font-family="'OpenSans-Extrabold'" font-size="137.5468px" letter-spacing="-5">SUE</text>
+		<text transform="matrix(1 0 0 1 -1.831055e-04 105.8686)" fill="#FFFFFF" font-family="'OpenSans-Extrabold'" font-size="137.5468px" letter-spacing="-5">SUE</text>
 </g>
 </svg>
