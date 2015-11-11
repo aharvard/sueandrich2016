@@ -1,13 +1,15 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-transition: all .3s ease;
+          transition: all .3s ease; }
 
+@-ms-viewport {
+  width: device-width; }
 ::-moz-selection {
-  background: linear-gradient(to left, #839CA0, #8da083);
+  background: #8da083;
   color: white; }
-
 ::selection {
-  background: -webkit-linear-gradient(right, #839CA0, #8da083);
-  background: linear-gradient(to left, #839CA0, #8da083);
+  background: #8da083;
   color: white; }
 
 html {
@@ -48,7 +50,7 @@ main {
   max-width: 1000px;
   min-height: 400px;
   margin: 0 auto 100px;
-  padding: 50px 4%;
+  padding: 70px 4% 50px;
   background: white; }
   main section {
     margin: 20px 0 180px; }
@@ -79,7 +81,7 @@ h1 {
     h1 {
       display: block;
       margin: 20px 0 100px;
-      font-size: 1.999em;
+      font-size: 3em;
       font-family: "Gentium Book Basic", serif;
       font-weight: 400;
       letter-spacing: -.05em;
@@ -95,16 +97,26 @@ h2 {
   text-transform: uppercase;
   border-top: 2px solid #839CA0;
   color: #839CA0; }
+  @media (max-width: 700px) {
+    h2 {
+      font-size: 1.414em; } }
   h2 span {
     background: white;
     padding: 0 20px;
     position: relative;
     top: -22px; }
+    @media (max-width: 700px) {
+      h2 span {
+        top: -15px; } }
 
 p,
 address {
   margin-bottom: 40px;
   font-size: 1.414em; }
+  @media (max-width: 700px) {
+    p,
+    address {
+      font-size: 1em; } }
 
 .to-do {
   font-family: "Gentium Book Basic", serif;
@@ -146,6 +158,9 @@ address {
         font-size: 1em;
         font-weight: 700;
         border-bottom: 2px solid transparent; }
+        @media (max-width: 800px) {
+          .site-nav ul li a {
+            margin: 20px 10px; } }
         .site-nav ul li a.active {
           border-bottom: 2px solid white; }
         .site-nav ul li a:hover, .site-nav ul li a:focus {
@@ -198,13 +213,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 50px; }
-  @media (max-width: 700px) {
-    .address-map {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
   .address-map address {
     display: inline-block;
     -webkit-box-flex: 1;
@@ -240,4 +248,5 @@ button {
     top: 0;
     left: 0;
     width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
