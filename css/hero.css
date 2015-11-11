@@ -1,0 +1,34 @@
+.hero {
+  height: 600px;
+  max-width: 2000px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: -10; }
+  @media (max-width: 700px) {
+    .hero {
+      height: 300px; } }
+  .hero img {
+    display: block;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; }
+
+.name-lockup {
+  width: 25%;
+  position: absolute;
+  top: 350px;
+  left: 56%; }
+  @media (max-width: 700px) {
+    .name-lockup {
+      top: 150px; } }
+  .name-lockup img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 20; }
+/*# sourceMappingURL=hero.css.map */

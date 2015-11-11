@@ -1,0 +1,322 @@
+@import "variables";
+
+* { box-sizing: border-box;}
+
+::selection {
+  background: $army-green-grad;
+  color: white;
+}
+
+html {font-size: 1em;}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  font-family: $sr-font-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: $warm-gray;
+  background: $site-bg;
+  width: 100%;
+}
+
+.body-photo {
+  background: linear-gradient( to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)),
+              url(../img/body-img.jpg) center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin: -300px auto;
+  z-index: 10;
+  position: relative;
+  z-index: -2000;
+
+  p {
+    position: relative;
+    top: 310px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    color: $army-green;
+    font-weight: 700;
+  }
+
+}
+
+
+main {
+  max-width: 1000px;
+  min-height: 400px;
+  margin: 0 auto 100px;
+  padding: 50px 4%;
+  background: white;
+
+  section {
+    margin: 20px 0 180px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $army-green;
+      text-decoration: underline;
+    }
+  }
+
+  .intro-copy {
+    margin-bottom: 40px;
+    font-size: $large-font;
+    color: $warm-gray;
+    margin-top: 0px;
+  }
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+h1 {
+  display: none;
+
+  @media (max-width: 700px) {
+    display: block;
+    margin: 20px 0 100px;
+    font-size: $large-font;
+    font-family: $sr-font-serif;
+    font-weight: 400;
+    letter-spacing: -.05em;
+    color: $army-green;
+    text-align: center;
+  }
+
+}
+
+h2 {
+  font-size: $large-font;
+  font-family: $sr-font-sans;
+  font-weight: 800;
+  margin: 0 0px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 2px solid $h2-color;
+  color: $h2-color;
+
+  span {
+    background: $site-bg;
+    padding: 0 20px;
+    position: relative;
+    top: -22px;
+  }
+}
+
+
+
+p,
+address {
+  margin-bottom: 40px;
+  font-size: $medium-font;
+}
+
+.to-do {
+  font-family: $sr-font-serif;
+  text-decoration: underline;
+  font-weight: 700;
+  color: $army-green;
+  display: block;
+}
+
+
+
+// SITE NAV
+
+
+// .site-nav {
+//   position: absolute;
+//   margin: 0 auto;
+//   width: 100%;
+//   z-index: 20;
+//   background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .2), rgba(0, 0, 0, 0));
+//
+//   .nav-links {
+//     display: flex;
+//     margin: 0 auto;
+//     padding: 10px 0 50px;
+//     justify-content: center;
+//
+//     li {
+//       flex: 0 1 auto;
+//       font-family: $sr-font-sans;
+//       font-size: $small-font;
+//       font-weight: 700;
+//       color: white;
+//       text-transform: uppercase;
+//       text-align: center;
+//       padding: 10px 4px 10px;
+//       margin: 0 16px;
+//
+//       a {
+//         color: white;
+//         padding-bottom: 4px;
+//         border-bottom: 2px solid transparent;
+//         transition: border .2s ease;
+//
+//         &:hover {
+//           border-bottom: 2px solid white;
+//           cursor: pointer;
+//           padding: 10px 0 4px;
+//         }
+//         &.active {
+//           border-bottom: 2px solid white;
+//           padding: 10px 0 4px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// CODEPEN NAV
+
+// Navigation, including mobile version
+.site-nav {
+  background: $army-green-grad;
+  color: white;
+  padding: 10px 0;
+  //transition: none;
+
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    li{
+      margin: 0;
+
+      a {
+        padding: 0;
+        margin: 20px 20px;
+        display: flex;
+        text-transform: uppercase;
+        font-family: $sr-font-sans;
+        font-size: $small-font;
+        font-weight: 700;
+        border-bottom: 2px solid transparent;
+          &.active {
+            border-bottom: 2px solid white;
+          }
+          &:hover, &:focus {
+            color: white;
+          }
+        }
+      }
+
+    .mobile-button a {
+      position: absolute;
+      left: -99999em;
+    }
+  }
+
+  @media (max-width: 700px) {
+    ul {
+      flex-direction: column;
+
+        a {
+          position: absolute;
+          left: -99999em;
+        }
+
+      &.open {
+        li {
+          flex: 1 0 100%;
+          display: flex;
+          a {
+            position: static;
+          }
+        }
+      }
+
+      .mobile-button a {
+          position: static;
+        }
+      }
+  }
+}
+
+
+
+
+// CODEPEN NAV
+
+button {
+  background: #8da083;
+  padding: 10px 40px 12px;
+  font-family: $sr-font-sans;
+  font-size: 20px;
+  color: white;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
+
+.address-map {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  address {
+    display: inline-block;
+    flex: 1 40%;
+  }
+
+  .map {
+    flex: 1 80%;
+
+    &.map-narrow {
+
+      iframe,
+      object,
+      embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.map {
+  position: relative;
+  flex: 1;
+  margin: 0 0 0;
+  height: 400px;
+  background: $army-green;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
