@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Sue and Rich 2016</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" />
+  <meta charset="utf-8" />
+  <title>Sue and Rich 2016</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+  <link rel="stylesheet" href="css/hero.css" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300' rel='stylesheet' type='text/css'>
 </head>
+  <body>
+    <header>
+      <div class="name-lockup">
+        <img src="img/name-lockup-alt.svg" alt="Sue and Rich Logo"/>
+      </div>
+      <div class="hero">
+        <img src="img/hero.jpg" alt="Sue and Rich in Oakland Cemetery"/>
+      </div>
+      <nav class="site-nav">
+        <ul class="nav-links">
+          <li class="mobile-button"><a href="#">Menu</a></li>
+          <li><a class="active">Wedding Details</a> </li>
+          <li><a href="./planning-your-trip.html">Planning Your Trip</a></li>
+          <li><a href="./things-to-do.html">Things to Do</a></li>
+          <li><a href="./registry.html">Registry</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-<body>
-  <div class="hero">
-    <div class="name-lockup"></div>
-  </div>
-</body>
+    </header>
+    <main>
+      <h1>Wedding Detials</h1>
+      <section>
+        <h2><span>Ceremony</span></h2>
+        <p>The wedding ceremony will be held at 5:00 pm at <a href="http://www.oaklandcemetery.com/" target="_blank">Atlanta’s Historic Oakland Cemetery</a>. The Cemetery is located at <a href="#wedding-details-map">248 Oakland Ave SE, Atlanta, GA 30312</a>.<br><br> Free parking is available in the lot just outside the front gate or along the street on Martin Luther King, Jr. Drive and Oakland Avenue. Oakland Cemetery is also accessible via public transportation (MARTA, King Memorial Station). Upon arrival, enter through the front gate and locate the Visitor’s Center. The ceremony will be located next to the Center directly in front of the Rawson Mausoleum. Look for the signs to direct you to the ceremony.</p>
+      </section>
+      <section>
+        <h2><span>Reception</span></h2>
+        <p>Immediately following the ceremony, a reception will be held at <a href="http://www.wreckingbarbrewpub.com/" target="_blank">Wrecking Bar Brewpub</a>, <a href="#wedding-details-map">292 Moreland Ave NE, Atlanta, GA 30307</a>. <br><br>Free valet parking will be available in the pub’s parking lot. To reach the Wrecking Bar from Oakland Cemetery, follow Decatur St SE/DeKalb Ave NE to Moreland Ave. Alternatively, head east on Memorial Drive and turn left onto Moreland Ave.</p>
+      </section>
+      <section>
+        <h2><span>Wedding Map</span></h2>
+        <div class="map" id="wedding-details-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d13269.046373200932!2d-84.37245986324892!3d33.753905431665885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x88f503f2ad1efdcb%3A0x8e89c207b430d2a0!2sOakland+Cemetery%2C+Oakland+Avenue+Southeast%2C+Atlanta%2C+GA!3m2!1d33.748588399999996!2d-84.3729865!4m5!1s0x88f506abe2990c89%3A0xacc59991441cfc3f!2sWrecking+Bar+Brewpub%2C+292+Moreland+Ave+NE%2C+Atlanta%2C+GA+30307%2C+United+States!3m2!1d33.762215399999995!2d-84.3496862!5e0!3m2!1sen!2sus!4v1446344153016" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section>
+    </main>
+    <div class="body-photo"></div>
+  </body>
+  <script language="javascript" type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+  <script src="scripts/nav.js"></script>
 </html>
