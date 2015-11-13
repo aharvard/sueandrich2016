@@ -41,7 +41,7 @@ body {
     padding: 0;
     color: $army-green-grad;
     font-weight: 700;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 main {
@@ -200,12 +200,10 @@ address {
     }
   }
 }
-
-.button-group{
+.button-group {
   margin: 0 auto;
   text-align: center;
 }
-
 button,
 a.button {
   background: $army-green;
@@ -214,39 +212,21 @@ a.button {
   font-size: 20px;
   color: white;
   border: none;
-  margin: 10px 10px;
+  margin: 10px;
   display: block;
   &:hover {
     background: $h2-color;
     color: white;
   }
+  @media (max-width: 700px){
+    width: 100%;
+    padding: 10px 0 12px;
+    margin: 10px  0;
+  }
 }
 a.button {
   display: inline-block;
   text-decoration: none;
-}
-.address-map {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 50px;
-  address {
-    display: inline-block;
-    flex: 1 40%;
-  }
-  .map {
-    flex: 1 80%;
-    &.map-narrow {
-      iframe,
-      object,
-      embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-    }
-  }
 }
 .map {
   position: relative;
@@ -254,6 +234,9 @@ a.button {
   margin: 0;
   height: 500px;
   background: $army-green;
+  @media (max-width: 700px) {
+    height: 300px;
+  }
   iframe,
   object,
   embed {
