@@ -45,23 +45,24 @@ body {
 }
 .body-photo p {
   position: relative;
-  top: 310px;
+  top: 330px;
   text-transform: uppercase;
   text-align: center;
   padding: 0;
-  color: #8da083;
+  color: linear-gradient(to left, #839CA0, #8da083);
   font-weight: 700;
+  opacity: .5;
 }
 
 main {
   max-width: 1000px;
   min-height: 400px;
-  margin: 0 auto 100px;
+  margin: 0 auto 10px;
   padding: 70px 4% 50px;
   background: white;
 }
 main section {
-  margin: 20px 0 180px;
+  margin: 20px 0 120px;
 }
 main section:last-child {
   margin-bottom: 0;
@@ -101,7 +102,7 @@ h1 {
 @media (max-width: 700px) {
   h1 {
     display: block;
-    margin: 20px 0 100px;
+    margin: -20px 0 80px;
     font-size: 3em;
     font-family: "Gentium Book Basic", serif;
     font-weight: 400;
@@ -231,6 +232,11 @@ address {
   }
 }
 
+.button-group {
+  margin: 0 auto;
+  text-align: center;
+}
+
 button,
 a.button {
   background: #8da083;
@@ -239,12 +245,13 @@ a.button {
   font-size: 20px;
   color: white;
   border: none;
-  margin: 0 auto;
+  margin: 10px 10px;
   display: block;
 }
 button:hover,
 a.button:hover {
-  background: #5b6b52;
+  background: #839CA0;
+  color: white;
 }
 
 a.button {
