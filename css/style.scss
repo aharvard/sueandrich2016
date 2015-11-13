@@ -203,7 +203,7 @@ address {
 // CODEPEN NAV
 button,
 a.button {
-  background: #8da083;
+  background: $army-green;
   padding: 10px 40px 12px;
   font-family: $sr-font-sans;
   font-size: 20px;
@@ -212,7 +212,8 @@ a.button {
   margin: 0 auto;
   display: block;
   &:hover {
-    background: darken($army-green, 20);
+    background: $h2-color;
+    color: white;
   }
 }
 a.button {
