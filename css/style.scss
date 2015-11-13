@@ -1,25 +1,20 @@
 @import "variables";
-
 * {
-  box-sizing: border-box;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-
-
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
-
-::selection {
+ ::selection {
   background: $army-green;
   color: white;
 }
-
-html {font-size: 1em;}
-
+html {
+  font-size: 1em;
+}
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: white;
   font-family: $sr-font-serif;
   font-weight: 400;
@@ -28,10 +23,8 @@ body {
   background: $site-bg;
   width: 100%;
 }
-
 .body-photo {
-  background: linear-gradient( to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)),
-              url(../img/body-img.jpg) center 35%;
+  background: linear-gradient( to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url(../img/body-img.jpg) center 35%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
@@ -40,7 +33,6 @@ body {
   z-index: 10;
   position: relative;
   z-index: -2000;
-
   p {
     position: relative;
     top: 310px;
@@ -50,54 +42,48 @@ body {
     color: $army-green;
     font-weight: 700;
   }
-
 }
-
-
 main {
   max-width: 1000px;
   min-height: 400px;
   margin: 0 auto 100px;
   padding: 70px 4% 50px;
   background: white;
-
   section {
     margin: 20px 0 180px;
-
     &:last-child {
       margin-bottom: 0;
     }
-
     a {
       color: $army-green;
       text-decoration: underline;
+      &:hover {
+        color: darken($army-green, 20);
+      }
     }
   }
-
   .intro-copy {
     margin-bottom: 40px;
     font-size: $large-font;
     color: $warm-gray;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
-
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
   color: white;
 }
-
 a {
   text-decoration: none;
   color: white;
 }
-
-
 h1 {
   display: none;
-
   @media (max-width: 700px) {
     display: block;
     margin: 20px 0 100px;
@@ -108,48 +94,37 @@ h1 {
     color: $army-green;
     text-align: center;
   }
-
 }
-
 h2 {
   font-size: $large-font;
   font-family: $sr-font-sans;
   font-weight: 800;
-  margin: 0 0px 20px;
+  margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;
   border-top: 2px solid $h2-color;
   color: $h2-color;
-
   @media (max-width: 700px) {
     font-size: $medium-font;
   }
-
   span {
     background: $site-bg;
     padding: 0 20px;
     position: relative;
     top: -22px;
-
     @media (max-width: 700px) {
-      top: -15px;;
+      top: -15px;
     }
   }
 }
-
-
-
 p,
 address {
   margin-bottom: 40px;
   font-size: $medium-font;
-
   @media (max-width: 700px) {
     font-size: $small-font;
   }
-
 }
-
 .to-do {
   font-family: $sr-font-serif;
   text-decoration: underline;
@@ -158,87 +133,76 @@ address {
   display: block;
 }
 
-
 // CODEPEN NAV
-
 // Navigation, including mobile version
 .site-nav {
   background: $army-green-grad;
   color: white;
   padding: 10px 0;
+
   //transition: none;
-
-
   ul {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-
-    li{
+    li {
       margin: 0;
-
       a {
         padding: 0;
-        margin: 20px 20px;
+        margin: 20px;
         display: flex;
         text-transform: uppercase;
         font-family: $sr-font-sans;
         font-size: $small-font;
         font-weight: 700;
         border-bottom: 2px solid transparent;
-
         @media (max-width: 800px) {
           margin: 20px 10px;
         }
-
-          &.active {
-            border-bottom: 2px solid white;
-          }
-          &:hover, &:focus {
-            color: white;
-          }
+        &.active {
+          border-bottom: 2px solid white;
+        }
+        &:hover,
+        &:focus {
+          color: white;
         }
       }
-
+    }
     .mobile-button a {
       position: absolute;
       left: -99999em;
     }
   }
-
   @media (max-width: 700px) {
     ul {
-      flex-direction: column;
-
-        a {
-          position: absolute;
-          left: -99999em;
-        }
-
+      display: block;
+      text-align: center;
+      a {
+        position: absolute;
+        left: -99999em;
+      }
       &.open {
         li {
-          flex: 1 0 100%;
-          display: flex;
           a {
             position: static;
+            text-align: center;
+            display: inline-block;
           }
         }
       }
-
       .mobile-button a {
-          position: static;
-        }
+        position: static;
+        display: block;
+        text-align: center;
       }
+    }
   }
 }
 
-
-
-
 // CODEPEN NAV
-
-button {
+button,
+a.button {
   background: #8da083;
   padding: 10px 40px 12px;
   font-family: $sr-font-sans;
@@ -247,25 +211,26 @@ button {
   border: none;
   margin: 0 auto;
   display: block;
+  &:hover {
+    background: darken($army-green, 20);
+  }
 }
-
+a.button {
+  display: inline-block;
+  text-decoration: none;
+}
 .address-map {
   display: flex;
   width: 100%;
   align-items: center;
   margin-bottom: 50px;
-
-
   address {
     display: inline-block;
     flex: 1 40%;
   }
-
   .map {
     flex: 1 80%;
-
     &.map-narrow {
-
       iframe,
       object,
       embed {
@@ -277,14 +242,12 @@ button {
     }
   }
 }
-
 .map {
   position: relative;
   flex: 1;
-  margin: 0 0 0;
-  height: 400px;
+  margin: 0;
+  height: 500px;
   background: $army-green;
-
   iframe,
   object,
   embed {

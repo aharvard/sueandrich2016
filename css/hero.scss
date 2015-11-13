@@ -1,47 +1,67 @@
 @import "variables";
-
 .hero {
   height: 600px;
   max-width: 2000px;
   overflow: hidden;
+
   // border-left: 20px solid white;
   // border-right: 20px solid white;
   margin: 0 auto;
   text-align: center;
   position: relative;
   z-index: -10;
-
-  @media (max-width: 700px) {
-    height: 300px;
+  @media (max-width: 800px) {
+    height: 400px;
   }
 
+  @media (max-width: 700px) {
+    height: 250px;
+  }
   img {
     display: block;
-    opacity: .8;
+    opacity: 0.8;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    @media (max-width: 700px) {
+      width: 150%;
+      object-fit: cover;
+      object-position: -200px 35%;
+    }
+    @media (max-width: 500px) {
+      width: 150%;
+      object-fit: cover;
+      object-position: -150px 40%;
+    }
   }
 }
-
 .name-lockup {
   width: 25%;
   position: absolute;
   top: 350px;
   left: 56%;
-
-  @media (max-width: 700px) {
-    top: 150px;
+  @media (max-width: 800px) {
+    top: 200px;
   }
-
-
+  @media (max-width: 700px) {
+    top: 100px;
+    left: 50%;
+  }
   img {
     display: block;
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 20;
-  }
+    @media (max-width: 700px) {
+      width: 120%;
+      height: 120%;
+    }
 
+    @media (max-width: 500px) {
+      width: 180%;
+      height: 180%;
+    }
+  }
 }
