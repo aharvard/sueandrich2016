@@ -51,7 +51,7 @@ body {
   padding: 0;
   color: linear-gradient(to left, #839CA0, #8da083);
   font-weight: 700;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 main {
@@ -245,7 +245,7 @@ a.button {
   font-size: 20px;
   color: white;
   border: none;
-  margin: 10px 10px;
+  margin: 10px;
   display: block;
 }
 button:hover,
@@ -253,44 +253,18 @@ a.button:hover {
   background: #839CA0;
   color: white;
 }
+@media (max-width: 700px) {
+  button,
+  a.button {
+    width: 100%;
+    padding: 10px 0 12px;
+    margin: 10px  0;
+  }
+}
 
 a.button {
   display: inline-block;
   text-decoration: none;
-}
-
-.address-map {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px;
-}
-.address-map address {
-  display: inline-block;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 40%;
-      -ms-flex: 1 40%;
-          flex: 1 40%;
-}
-.address-map .map {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 80%;
-      -ms-flex: 1 80%;
-          flex: 1 80%;
-}
-.address-map .map.map-narrow iframe,
-.address-map .map.map-narrow object,
-.address-map .map.map-narrow embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 .map {
@@ -302,6 +276,11 @@ a.button {
   margin: 0;
   height: 500px;
   background: #8da083;
+}
+@media (max-width: 700px) {
+  .map {
+    height: 300px;
+  }
 }
 .map iframe,
 .map object,
