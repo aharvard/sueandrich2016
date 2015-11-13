@@ -6,30 +6,55 @@
   text-align: center;
   position: relative;
   z-index: -10; }
+  @media (max-width: 800px) {
+    .hero {
+      height: 400px; } }
   @media (max-width: 700px) {
     .hero {
-      height: 300px; } }
+      height: 250px; } }
   .hero img {
     display: block;
-    opacity: .8;
+    opacity: 0.8;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center; }
+    @media (max-width: 700px) {
+      .hero img {
+        width: 150%;
+        object-fit: cover;
+        object-position: -200px 35%; } }
+    @media (max-width: 500px) {
+      .hero img {
+        width: 150%;
+        object-fit: cover;
+        object-position: -150px 40%; } }
 
 .name-lockup {
   width: 25%;
   position: absolute;
   top: 350px;
   left: 56%; }
+  @media (max-width: 800px) {
+    .name-lockup {
+      top: 200px; } }
   @media (max-width: 700px) {
     .name-lockup {
-      top: 150px; } }
+      top: 100px;
+      left: 50%; } }
   .name-lockup img {
     display: block;
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 20; }
+    @media (max-width: 700px) {
+      .name-lockup img {
+        width: 120%;
+        height: 120%; } }
+    @media (max-width: 500px) {
+      .name-lockup img {
+        width: 180%;
+        height: 180%; } }
 
 /*# sourceMappingURL=hero.css.map */
