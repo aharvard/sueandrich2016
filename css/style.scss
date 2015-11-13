@@ -35,22 +35,23 @@ body {
   z-index: -2000;
   p {
     position: relative;
-    top: 310px;
+    top: 330px;
     text-transform: uppercase;
     text-align: center;
     padding: 0;
-    color: $army-green;
+    color: $army-green-grad;
     font-weight: 700;
+    opacity: .5;
   }
 }
 main {
   max-width: 1000px;
   min-height: 400px;
-  margin: 0 auto 100px;
+  margin: 0 auto 10px;
   padding: 70px 4% 50px;
   background: white;
   section {
-    margin: 20px 0 180px;
+    margin: 20px 0 120px;
     &:last-child {
       margin-bottom: 0;
     }
@@ -86,7 +87,7 @@ h1 {
   display: none;
   @media (max-width: 700px) {
     display: block;
-    margin: 20px 0 100px;
+    margin: -20px 0 80px;
     font-size: $huge-font;
     font-family: $sr-font-serif;
     font-weight: 400;
@@ -200,7 +201,11 @@ address {
   }
 }
 
-// CODEPEN NAV
+.button-group{
+  margin: 0 auto;
+  text-align: center;
+}
+
 button,
 a.button {
   background: $army-green;
@@ -209,7 +214,7 @@ a.button {
   font-size: 20px;
   color: white;
   border: none;
-  margin: 0 auto;
+  margin: 10px 10px;
   display: block;
   &:hover {
     background: $h2-color;
