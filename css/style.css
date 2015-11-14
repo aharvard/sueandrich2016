@@ -140,15 +140,23 @@ h2 span {
 }
 
 p,
-address {
+ul.contact {
   margin-bottom: 40px;
   font-size: 1.414em;
 }
 @media (max-width: 700px) {
   p,
-  address {
+  ul.contact {
     font-size: 1em;
   }
+}
+p li,
+ul.contact li {
+  list-style: circle;
+}
+
+ul.contact {
+  margin: -20px 0 0 60px;
 }
 
 .to-do {
