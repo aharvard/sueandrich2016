@@ -55,8 +55,8 @@ body {
 }
 
 main {
-  max-width: 1000px;
-  min-height: 400px;
+  max-width: 740px;
+  min-height: 300px;
   margin: 0 auto 10px;
   padding: 70px 4% 50px;
   background: white;
@@ -297,6 +297,11 @@ a.button {
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.map-hotel {
+  height: 250px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
