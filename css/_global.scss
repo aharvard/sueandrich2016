@@ -1,0 +1,258 @@
+* {
+    transition: all 0.3s ease;
+}
+@-ms-viewport {
+    width: device-width;
+}
+::selection {
+    background: $army-green;
+    color: white;
+}
+html {
+    font-size: 1em;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: $sr-font-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: $warm-gray;
+    background: $site-bg;
+    width: 100%;
+}
+.body-photo {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 1)), url(../img/body-img.jpg) center 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    margin: -300px auto;
+    z-index: 10;
+    position: relative;
+    z-index: -2000;
+    p {
+        position: relative;
+        top: 330px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0;
+        color: $army-green-grad;
+        font-weight: 700;
+        opacity: 0.5;
+    }
+}
+main {
+    max-width: 740px;
+    min-height: 300px;
+    margin: 0 auto 10px;
+    padding: 70px 4% 50px;
+    background: white;
+    section {
+        margin: 20px 0 120px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: $army-green;
+            text-decoration: underline;
+            &:hover {
+                color: darken($army-green, 20);
+            }
+        }
+    }
+    .intro-copy {
+        margin-bottom: 40px;
+        font-size: $large-font;
+        color: $warm-gray;
+        margin-top: 0;
+    }
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    display: none;
+    @media (max-width: 700px) {
+        display: block;
+        margin: -20px 0 80px;
+        font-size: $huge-font;
+        font-family: $sr-font-serif;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+        color: $army-green;
+        text-align: center;
+    }
+}
+h2 {
+    font-size: $large-font;
+    font-family: $sr-font-sans;
+    font-weight: 800;
+    margin: 0 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 2px solid $h2-color;
+    color: $h2-color;
+    @media (max-width: 700px) {
+        font-size: $medium-font;
+    }
+    span {
+        background: $site-bg;
+        padding: 0 20px;
+        position: relative;
+        top: -22px;
+        @media (max-width: 700px) {
+            top: -15px;
+        }
+    }
+}
+p,
+ul.contact {
+    margin-bottom: 40px;
+    font-size: $medium-font;
+    @media (max-width: 700px) {
+        font-size: $small-font;
+    }
+    li {
+        list-style: circle;
+    }
+}
+ul.contact {
+    margin: -20px 0 0 60px;
+}
+.to-do {
+    font-family: $sr-font-serif;
+    text-decoration: underline;
+    font-weight: 700;
+    color: $army-green;
+    display: block;
+}
+
+// CODEPEN NAV
+// Navigation, including mobile version
+.site-nav {
+    background: $army-green-grad;
+    color: white;
+    padding: 10px 0;
+
+    //transition: none;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        li {
+            margin: 0;
+            a {
+                padding: 0;
+                margin: 20px;
+                display: flex;
+                text-transform: uppercase;
+                font-family: $sr-font-sans;
+                font-size: $small-font;
+                font-weight: 700;
+                border-bottom: 2px solid transparent;
+                @media (max-width: 800px) {
+                    margin: 20px 10px;
+                }
+                &.active {
+                    border-bottom: 2px solid white;
+                }
+                &:hover,
+                &:focus {
+                    color: white;
+                }
+            }
+        }
+        .mobile-button a {
+            position: absolute;
+            left: -99999em;
+        }
+    }
+    @media (max-width: 700px) {
+        ul {
+            display: block;
+            text-align: center;
+            a {
+                position: absolute;
+                left: -99999em;
+            }
+            &.open {
+                li {
+                    a {
+                        position: static;
+                        text-align: center;
+                        display: inline-block;
+                    }
+                }
+            }
+            .mobile-button a {
+                position: static;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+.button-group {
+    margin: 0 auto;
+    text-align: center;
+}
+button,
+a.button {
+    background: $army-green;
+    padding: 10px 40px 12px;
+    font-family: $sr-font-sans;
+    font-size: 20px;
+    color: white;
+    border: none;
+    margin: 10px;
+    display: block;
+    &:hover {
+        background: $h2-color;
+        color: white;
+    }
+    @media (max-width: 700px) {
+        width: 100%;
+        padding: 10px 0 12px;
+        margin: 10px 0;
+    }
+}
+a.button {
+    display: inline-block;
+    text-decoration: none;
+}
+.map {
+    position: relative;
+    flex: 1;
+    margin: 0;
+    height: 500px;
+    background: $army-green;
+    @media (max-width: 700px) {
+        height: 300px;
+    }
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.map-hotel {
+    height: 250px;
+    margin-bottom: 30px;
+}
